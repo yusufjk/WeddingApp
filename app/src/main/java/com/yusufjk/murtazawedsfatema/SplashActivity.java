@@ -65,8 +65,8 @@ public class SplashActivity extends AppCompatActivity {
         exitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                android.os.Process.killProcess(android.os.Process.myPid());
                 exitDialog.dismiss();
+                android.os.Process.killProcess(android.os.Process.myPid());
 
             }
         });
